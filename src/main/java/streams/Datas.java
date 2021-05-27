@@ -1,8 +1,10 @@
+package streams;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 
-public class Dates {
+public class Datas {
     
     public static void main(final String[] args) {
         
