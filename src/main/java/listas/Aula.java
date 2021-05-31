@@ -1,0 +1,35 @@
+package listas;
+
+public class Aula implements Comparable<Aula> {
+    
+    private final String titulo;
+    private final int tempo;
+    
+    public Aula(final String titulo, final int tempo) {
+        
+        this.titulo = titulo;
+        this.tempo = tempo;
+    }
+    
+    public String getTitulo() {
+        
+        return titulo;
+    }
+    
+    public int getTempo() {
+        
+        return tempo;
+    }
+    
+    @Override
+    public String toString() {
+        
+        return "[Aula: " + titulo + ", " + tempo + " minutos]";
+    }
+    
+    @Override
+    public int compareTo(final Aula outraAula) {
+        
+        return titulo.compareTo(outraAula.getTitulo());
+    }
+}
